@@ -36,6 +36,15 @@ On the configuration popup, provide the right Ethos API Key and then hit Save
 </p>
 
 After configuring the environment variables, choose `Ethos Integration` as your environment. 
+
+Change the JavaScript Sandbox from Safe Mode to Developer Mode: click the "Safe Mode" (1) at the top right and select "Developer Mode" (2)
+<p align="center">
+    <img src="/docs/images/javascript-sandbox.jpg" />
+</p>
+
+<i>About JavaScript Sandbox: https://docs.usebruno.com/configure/javascript-sandbox</i>
+
+
 Now, you are now ready to initiate API execution.
 
 <p align="center">
