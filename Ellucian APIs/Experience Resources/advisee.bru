@@ -1,0 +1,25 @@
+meta {
+  name: advisee
+  type: http
+  seq: 64
+}
+
+get {
+  url: /advisors/:advisorId/advisees/:studentId/?term=202630
+  body: none
+  auth: none
+}
+
+params:query {
+  term: 202630
+}
+
+params:path {
+  advisorId: 9990250
+  studentId: 915618
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/vnd.hedtech.integration.v1.0.0+json
+}

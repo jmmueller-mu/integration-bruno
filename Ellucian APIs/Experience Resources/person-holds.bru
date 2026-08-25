@@ -1,0 +1,20 @@
+meta {
+  name: person-holds
+  type: http
+  seq: 69
+}
+
+get {
+  url: person-holds?criteria={"person":{"id":"daf371bb-7f17-4c10-b42d-63e743071483"}}
+  body: none
+  auth: none
+}
+
+params:query {
+  criteria: {"person":{"id":"daf371bb-7f17-4c10-b42d-63e743071483"}}
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

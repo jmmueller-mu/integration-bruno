@@ -1,7 +1,7 @@
 meta {
   name: GET section-registration-information by person
   type: http
-  seq: 50
+  seq: 49
 }
 
 get {
@@ -10,7 +10,7 @@ get {
   auth: none
 }
 
-query {
+params:query {
   criteria: {"registrantId":"{{personGuid}}"}
 }
 

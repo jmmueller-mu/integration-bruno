@@ -1,13 +1,17 @@
 meta {
-  name: GET ALL housing-requests
+  name: students/id/class-schedules
   type: http
-  seq: 45
+  seq: 67
 }
 
 get {
-  url: /housing-requests
+  url: students/:id/class-schedules
   body: none
   auth: none
+}
+
+params:path {
+  id: 00925789
 }
 
 headers {

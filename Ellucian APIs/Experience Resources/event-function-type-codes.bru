@@ -1,0 +1,20 @@
+meta {
+  name: event-function-type-codes
+  type: http
+  seq: 72
+}
+
+get {
+  url: /event-function-details?criteria={"eventReferenceNumber":"A3826","function":"CLGE"}
+  body: none
+  auth: none
+}
+
+params:query {
+  criteria: {"eventReferenceNumber":"A3826","function":"CLGE"}
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/vnd.hedtech.integration.v1+json
+}

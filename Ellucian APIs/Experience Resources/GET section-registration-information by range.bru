@@ -1,7 +1,7 @@
 meta {
   name: GET section-registration-information by range
   type: http
-  seq: 51
+  seq: 50
 }
 
 get {
@@ -10,7 +10,7 @@ get {
   auth: none
 }
 
-query {
+params:query {
   criteria: {"startDateRange":"2024-02-18","endDateRange":"2024-08-16","registrantId":"{{personGuid}}"}
 }
 

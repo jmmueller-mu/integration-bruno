@@ -1,0 +1,21 @@
+meta {
+  name: faculty-information-base-details
+  type: http
+  seq: 62
+}
+
+get {
+  url: /faculty-information-base-details?id=00923812&keyblckTermCode=202630
+  body: none
+  auth: none
+}
+
+params:query {
+  id: 00923812
+  keyblckTermCode: 202630
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/vnd.hedtech.integration.v1.0.0+json
+}

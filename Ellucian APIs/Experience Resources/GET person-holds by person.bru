@@ -1,7 +1,7 @@
 meta {
   name: GET person-holds by person
   type: http
-  seq: 25
+  seq: 24
 }
 
 get {
@@ -10,7 +10,7 @@ get {
   auth: none
 }
 
-query {
+params:query {
   criteria: {"person":{"id":"{{personGuid}}"}}
 }
 

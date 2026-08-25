@@ -1,7 +1,7 @@
 meta {
   name: GET student-unverified-grades by Id
   type: http
-  seq: 48
+  seq: 47
 }
 
 get {
@@ -10,7 +10,7 @@ get {
   auth: none
 }
 
-query {
+params:query {
   criteria: {"student": {"id": "{{personGuid}}"}}
 }
 

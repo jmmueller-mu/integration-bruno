@@ -1,0 +1,40 @@
+meta {
+  name: PUT person-holds by person
+  type: http
+  seq: 25
+}
+
+put {
+  url: /person-holds
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/vnd.hedtech.integration.v6.1.0+json 
+  Content-Type: application/vnd.hedtech.integration.v6+json 
+}
+
+body:json {
+  {
+    "metadata": {
+      "modifiedBy": "jmmueller",
+      "modifiedOn": "2026-16-08T50:06:47Z"
+    },
+      "id": "2d9527c8-ff46-4c34-8ff0-9718656cdf3b",
+      "person": {
+        "id": "daf371bb-7f17-4c10-b42d-63e743071483"
+      },
+      "type": {
+        "category": "academic",
+        "detail": {
+          "id": "af498036-14aa-4122-a844-35282cfd13f7"
+        }
+      },
+      "notificationIndicator": "notify",
+      "startOn": "2025-12-09T18:06:47Z",
+      "endOn": "2026-16-08T50:06:47Z",
+      "comment" : "Testing from API"
+    }
+}

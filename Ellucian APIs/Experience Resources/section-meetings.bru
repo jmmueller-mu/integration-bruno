@@ -1,13 +1,17 @@
 meta {
-  name: GET ALL section-registration-information
+  name: section-meetings
   type: http
-  seq: 48
+  seq: 59
 }
 
 get {
-  url: section-registration-information
+  url: /section-meetings?criteria={"term": "200110"}
   body: none
   auth: none
+}
+
+params:query {
+  criteria: {"term": "200110"}
 }
 
 headers {
